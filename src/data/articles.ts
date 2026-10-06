@@ -6,6 +6,7 @@ import { ARTICLES_BATCH_2 } from './articlesBatch2';
 import { ARTICLES_BATCH_3 } from './articlesBatch3';
 import { ARTICLES_BATCH_4 } from './articlesBatch4';
 import { ARTICLES_BATCH_5 } from './articlesBatch5';
+import { ARTICLES_BATCH_6 } from './articlesBatch6';
 import { ARTICLES_2026 } from './articles2026';
 
 export const CATEGORIES: Record<CategorySlug, CategoryInfo> = {
@@ -47,6 +48,7 @@ export const CATEGORIES: Record<CategorySlug, CategoryInfo> = {
 };
 
 export const REAL_ARTICLES: Article[] = [
+  ...ARTICLES_BATCH_6,
   ...ARTICLES_BATCH_5,
   ...ARTICLES_BATCH_4,
   ...ARTICLES_2026,

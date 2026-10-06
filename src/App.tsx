@@ -17,8 +17,8 @@ import { AdminSocialStudio } from './components/AdminSocialStudio';
 import { ArchiveMapPage } from './components/ArchiveMapPage';
 import { ArchiveTimelinePage } from './components/ArchiveTimelinePage';
 import { getAllArticles } from './data/articles';
-import { LanguageProvider } from './context/LanguageContext';
-import { LanguageWelcomeBanner } from './components/LanguageSelector';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import { LanguageWelcomeBanner, TranslationStatusToast } from './components/LanguageSelector';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { initGA, trackPageView, trackStoryView, GA_MEASUREMENT_ID } from './services/analytics';
@@ -70,6 +70,25 @@ function ScrollToTop() {
   return null;
 }
 
+// Ensure Google Translate observer catches dynamically rendered routes
+function RouteTranslationSync() {
+  const { language } = useLanguage();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (language !== 'es') {
+      const selectEl = document.querySelector('.goog-te-combo') as HTMLSelectElement | null;
+      if (selectEl && selectEl.value === language) {
+        try {
+          selectEl.dispatchEvent(new Event('change', { bubbles: true }));
+        } catch (e) {}
+      }
+    }
+  }, [location.pathname, language]);
+
+  return null;
+}
+
 function MainLayout() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [infoModalType, setInfoModalType] = useState<InfoModalType>(null);
@@ -79,8 +98,10 @@ function MainLayout() {
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-[#1C1917] flex flex-col font-sans-clean overflow-x-hidden selection:bg-stone-900 selection:text-[#FAF8F5]">
       <ScrollToTop />
+      <RouteTranslationSync />
       <AnalyticsTracker />
       <LanguageWelcomeBanner />
+      <TranslationStatusToast />
 
       {/* 1. Header with real routes & clean mobile drawer */}
       <Header

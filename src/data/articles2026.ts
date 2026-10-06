@@ -16,8 +16,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Llevaban más de cien años frente a las cámaras de los científicos, pero nadie sabía que eran una especie completamente distinta oculta en una roca del océano Índico.",
     "socialHookTitle": "UNA NUEVA ESPECIE OCULTA DURANTE UN SIGLO",
     "socialLocation": "ISLAS KERGUELEN · OCÉANO ÍNDICO",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/nuevo-linaje-pinguino-kerguelensis-2026.jpg",
-    "accessionNumber": "BIO-2026-KERG",
+        "accessionNumber": "BIO-2026-KERG",
     "featured": true,
     "tags": [
       "Biología",
@@ -176,8 +175,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Estaba convertido en carbón sólido por la ceniza del Vesubio. Si lo tocabas, se deshacía. Hoy una IA ha leído su última página sin desenrollarlo ni un milímetro.",
     "socialHookTitle": "LEÍDO TRAS 2000 AÑOS BAJO LA CENIZA",
     "socialLocation": "HERCULANO · ITALIA (79 d.C.)",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/rollos-herculano-descifrados-ia-2026.jpg",
-    "accessionNumber": "ARC-2026-HERC",
+        "accessionNumber": "ARC-2026-HERC",
     "featured": true,
     "tags": [
       "Arqueología",
@@ -336,8 +334,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Los rayos cósmicos del espacio exterior atravesaron millones de toneladas de piedra caliza y encontraron algo que no debería estar ahí: un túnel intacto y sellado.",
     "socialHookTitle": "EL CORREDOR OCULTO DE KEOPS",
     "socialLocation": "PIRÁMIDE DE GUIZA · EGIPTO",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/corredor-oculto-gran-piramide-guiza-2026.jpg",
-    "accessionNumber": "EGY-2026-GIZA",
+        "accessionNumber": "EGY-2026-GIZA",
     "featured": false,
     "tags": [
       "Egipto",
@@ -496,8 +493,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "No están clonando un fósil congelado: han reescrito más de 150 regiones del genoma de un elefante para que su sangre y pelaje resistan el frío del Ártico.",
     "socialHookTitle": "REACTIVAN EL ADN DEL MAMUT",
     "socialLocation": "BOSTON / DALLAS · BIOTECNOLOGÍA",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/des-extincion-mamut-colossal-2026.jpg",
-    "accessionNumber": "GEN-2026-MAMM",
+        "accessionNumber": "GEN-2026-MAMM",
     "featured": false,
     "tags": [
       "Genética",
@@ -656,8 +652,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Dos naves gigantescas conectadas a 27.000 km/h en la oscuridad del espacio traspasando combustible a 150 grados bajo cero. Si falla, el programa lunar se apaga.",
     "socialHookTitle": "LA GASOLINERA EN EL ESPACIO",
     "socialLocation": "ÓRBITA TERRESTRE · SPACEX",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/starship-v3-transferencia-orbital-2026.jpg",
-    "accessionNumber": "SPX-2026-STAR",
+        "accessionNumber": "SPX-2026-STAR",
     "featured": false,
     "tags": [
       "Espacio",
@@ -816,8 +811,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "El universo tenía apenas 670 millones de años, pero en su centro ya brillaba un agujero negro con la masa de mil millones de soles que desafía toda la cosmología.",
     "socialHookTitle": "AGUJEROS NEGROS IMPOSIBLES",
     "socialLocation": "AMANECER CÓSMICO · JWST",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/cuasares-imposibles-universo-temprano-jwst.jpg",
-    "accessionNumber": "AST-2026-JWST",
+        "accessionNumber": "AST-2026-JWST",
     "featured": false,
     "tags": [
       "Astronomía",
@@ -976,8 +970,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "A mil millones de kilómetros de la Tierra, bajo veinte kilómetros de hielo, un océano oscuro reúne carbono, hidrógeno, nitrógeno, oxígeno, fósforo y azufre.",
     "socialHookTitle": "VIDA EN EL OCÉANO DE SATURNO",
     "socialLocation": "ENCÉLADO · SISTEMA SOLAR",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/vida-microorganismos-oceano-encelado-2026.jpg",
-    "accessionNumber": "ENC-2026-LIFE",
+        "accessionNumber": "ENC-2026-LIFE",
     "featured": false,
     "tags": [
       "Astrobiología",
@@ -1136,8 +1129,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Fue abandonado en 1967 y clasificado como chatarra inerte. Casi sesenta años después, radiotelescopios captaron una ráfaga procedente de su fuselaje.",
     "socialHookTitle": "EL SATÉLITE QUE VOLVIÓ A HABLAR",
     "socialLocation": "ÓRBITA TERRESTRE · GUERRA FRÍA",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/satelite-zombi-relay2-les1-misterio-radio.jpg",
-    "accessionNumber": "SAT-2026-ZOMB",
+        "accessionNumber": "SAT-2026-ZOMB",
     "featured": false,
     "tags": [
       "Espacio",
@@ -1296,8 +1288,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Siempre nos enseñaron que el Amazonas era una selva virgen intocada. Un sensor láser montado en un avión acaba de desmentirlo revelando miles de pirámides de tierra y calzadas.",
     "socialHookTitle": "CIUDADES PERDIDAS EN EL AMAZONAS",
     "socialLocation": "VALLE DEL UPANO · ECUADOR",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/ciudades-perdidas-amazonas-lidar-upano.jpg",
-    "accessionNumber": "AMA-2026-LIDR",
+        "accessionNumber": "AMA-2026-LIDR",
     "featured": true,
     "tags": [
       "Amazonas",
@@ -1456,8 +1447,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "No dejaron un solo cráneo, ni herramientas de piedra, ni tumbas. Sin embargo, su firma genética vive oculta en el 1% de cada célula de tu cuerpo.",
     "socialHookTitle": "EL ANTEPASADO FANTASMA EN TU ADN",
     "socialLocation": "GENÓMICA EVOLUTIVA · UC BERKELEY",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/linaje-humano-fantasma-adn-trace-2026.jpg",
-    "accessionNumber": "ANT-2026-GHOST",
+        "accessionNumber": "ANT-2026-GHOST",
     "featured": false,
     "tags": [
       "Genética",
@@ -1616,8 +1606,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Llegó a Estados Unidos sin hablar inglés, limpió inodoros en un internado rural y lavó platos por horas en Denny’s. Años después, fundó una compañía en esa misma cafetería que hoy vale más de 3 billones de dólares.",
     "socialHookTitle": "DE LAVAR PLATOS A DIRIGIR LA IA",
     "socialLocation": "SILICON VALLEY · CALIFORNIA",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/de-lavaplatos-a-arquitecto-de-la-ia-jensen-huang-nvidia.jpg",
-    "accessionNumber": "BIO-1993-NVID",
+        "accessionNumber": "BIO-1993-NVID",
     "featured": true,
     "tags": [
       "NVIDIA",
@@ -1781,8 +1770,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "En diciembre de 1971, un rayo desintegró el vuelo LANSA 508 en el aire. Juliane cayó atada a su asiento de tres plazas a tres kilómetros de altura y vivió para contarlo.",
     "socialHookTitle": "CAYÓ DE UN AVIÓN A 3.000 METROS",
     "socialLocation": "PUERTO INCA · SELVA PERUANA",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/la-caida-desde-3000-metros-juliane-koepcke-selva-amazonica.jpg",
-    "accessionNumber": "LANSA-1971-508",
+        "accessionNumber": "LANSA-1971-508",
     "featured": false,
     "tags": [
       "Amazonas",
@@ -1941,8 +1929,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "El 5 de agosto de 2010, un bloque de roca de la mitad del tamaño del Empire State selló a 33 mineros en las entrañas del desierto chileno. El mundo contuvo la respiración durante más de dos meses.",
     "socialHookTitle": "69 DÍAS BAJO 700 METROS DE ROCA",
     "socialLocation": "MINA SAN JOSÉ · ATACAMA, CHILE",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/los-33-mineros-de-atacama-69-dias-bajo-tierra-mina-san-jose.jpg",
-    "accessionNumber": "MIN-2010-33CL",
+        "accessionNumber": "MIN-2010-33CL",
     "featured": false,
     "tags": [
       "Chile",
@@ -2101,8 +2088,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Durante la Segunda Guerra Mundial, el castillo de Colditz era considerado inexpugnable. Sin embargo, un grupo de ingenieros británicos ideó un plan audaz: construir un planeador real en el tejado para escapar volando.",
     "socialHookTitle": "UN AVIÓN SECRETO EN UNA CÁRCEL NAZI",
     "socialLocation": "CASTILLO DE COLDITZ · SAJONIA",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/el-planeador-secreto-del-castillo-de-colditz-fuga-imposible.jpg",
-    "accessionNumber": "POW-1944-COLD",
+        "accessionNumber": "POW-1944-COLD",
     "featured": false,
     "tags": [
       "Segunda Guerra Mundial",
@@ -2261,8 +2247,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "El 26 de septiembre de 1983, las pantallas de la URSS parpadearon alertando del lanzamiento de misiles nucleares estadounidenses. Las normas exigían un contraataque inmediato. Petrov se negó.",
     "socialHookTitle": "EL HOMBRE QUE FRENÓ LA GUERRA NUCLEAR",
     "socialLocation": "BÚNKER SERPUKHOV-15 · URSS (1983)",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/stanislav-petrov-el-hombre-que-evito-la-guerra-nuclear-1983.jpg",
-    "accessionNumber": "NUC-1983-OKO",
+        "accessionNumber": "NUC-1983-OKO",
     "featured": false,
     "tags": [
       "Guerra Fría",
@@ -2421,8 +2406,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "El 26 de enero de 1972, una bomba estalló en el equipaje del vuelo JAT 367 sobre Checoslovaquia. Vesna cayó atada al carrito de bebidas desde más de diez kilómetros de altura.",
     "socialHookTitle": "CAÍDA LIBRE DESDE 10.160 METROS",
     "socialLocation": "SRBSKÁ KAMENICE · CHECOSLOVAQUIA",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/la-caida-de-10160-metros-sin-paracaidas-vesna-vulovic.jpg",
-    "accessionNumber": "AIR-1972-JAT",
+        "accessionNumber": "AIR-1972-JAT",
     "featured": false,
     "tags": [
       "Aviación",
@@ -2580,8 +2564,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Durante la Guerra Fría, la URSS rivalizó con Estados Unidos no solo en el espacio, sino cavando hacia el centro de la Tierra. Llegaron a 12.262 metros de profundidad antes de detenerse.",
     "socialHookTitle": "12.262 METROS HACIA EL CENTRO DE LA TIERRA",
     "socialLocation": "PENÍNSULA DE KOLA · ÁRTICO RUSO",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/el-pozo-superprofundo-de-kola-12262-metros-hacia-el-manto.jpg",
-    "accessionNumber": "GEO-1970-SG3",
+        "accessionNumber": "GEO-1970-SG3",
     "featured": false,
     "tags": [
       "Geología",
@@ -2740,8 +2723,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Durante el fin de semana del 14 de julio de 1976, unos ladrones cavaron un túnel de ocho metros desde el alcantarillado de Niza hasta la cámara acorazada de un banco francés.",
     "socialHookTitle": "EL ATRACO DEL SIGLO POR LAS CLOACAS",
     "socialLocation": "NIZA · FRANCIA (1976)",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/el-gran-robo-de-niza-albert-spaggiari-societe-generale.jpg",
-    "accessionNumber": "CRIM-1976-NICE",
+        "accessionNumber": "CRIM-1976-NICE",
     "featured": false,
     "tags": [
       "Francia",
@@ -2900,8 +2882,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Mientras las bombas destruían cada edificio de su ciudad, un grupo de jóvenes sirios arriesgó su vida todos los días para rescatar libros de la literatura universal.",
     "socialHookTitle": "SALVARON 14.000 LIBROS BAJO LAS BOMBAS",
     "socialLocation": "DARAYA · DAMASCO, SIRIA (2012-2016)",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/la-biblioteca-subterranea-secreta-de-daraya-libros-bajo-las-bombas.jpg",
-    "accessionNumber": "BIB-2012-DARA",
+        "accessionNumber": "BIB-2012-DARA",
     "featured": false,
     "tags": [
       "Siria",
@@ -3060,8 +3041,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "Durante décadas, mineros sudafricanos extrajeron pequeñas esferas de metal con ranuras paralelas labradas alrededor de su ecuador en estratos geológicos anteriores a la aparición de la vida compleja.",
     "socialHookTitle": "ESFERAS METÁLICAS DE 2.800 MILLONES DE AÑOS",
     "socialLocation": "MINAS DE OTTOSDAL · SUDÁFRICA",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/las-esferas-de-klerksdorp-el-misterio-geologico-de-2800-millones-de-anos.jpg",
-    "accessionNumber": "GEO-2800M-KLERK",
+        "accessionNumber": "GEO-2800M-KLERK",
     "featured": false,
     "tags": [
       "Geología",
@@ -3220,8 +3200,7 @@ export const ARTICLES_2026: Article[] = [
     "excerpt": "El 10 de junio de 1990, una mala instalación de pernos provocó que el parabrisas delantero del avión saliera disparado, succionando medio cuerpo del capitán hacia el exterior de la cabina.",
     "socialHookTitle": "SUCCIONADO POR LA VENTANA A 5.300 METROS",
     "socialLocation": "OXFORDSHIRE · REINO UNIDO (1990)",
-    "socialCoverImage": "https://archivoinusual.vercel.app/images/social/el-vuelo-5390-el-capitan-que-sobrevivio-fuera-de-la-cabina-en-vuelo.jpg",
-    "accessionNumber": "AER-1990-BA5390",
+        "accessionNumber": "AER-1990-BA5390",
     "featured": false,
     "tags": [
       "Aviación",

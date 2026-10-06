@@ -137,6 +137,9 @@ iframe.goog-te-banner-frame {
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  border: none !important;
 }
 
 body {
@@ -155,15 +158,21 @@ body {
   box-shadow: none !important;
 }
 
+/* Hidden Google Translate container that maintains dimension so the script never fails init */
 #google_translate_element {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0.01;
   pointer-events: none;
+  z-index: -9999;
 }
 
-body > .skiptranslate {
+/* Hide Google's banner iframe container from view */
+body > .skiptranslate:not(#google_translate_element) {
   display: none !important;
 }
 

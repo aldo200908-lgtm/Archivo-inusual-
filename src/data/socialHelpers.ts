@@ -241,8 +241,13 @@ export function getSocialLocation(article: Article): string {
  * Gets the stable, public URL for the 1080x1350 social cover image.
  */
 export function getSocialCoverUrl(article: Article): string {
-  if (article.socialCoverImage) return article.socialCoverImage;
-  return `https://archivoinusual.vercel.app/images/social/${article.slug}.jpg`;
+  if (article.coverImage && article.coverImage.startsWith('http')) {
+    return article.coverImage;
+  }
+  if (article.coverImage) {
+    return `https://archivoinusual.vercel.app${article.coverImage}`;
+  }
+  return 'https://archivoinusual.vercel.app/og-cover.jpg';
 }
 
 /**

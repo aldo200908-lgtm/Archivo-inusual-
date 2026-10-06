@@ -24,7 +24,18 @@ let itemsXml = '';
 for (const art of sorted) {
   const pubDate = new Date(art.publishedAt || Date.now()).toUTCString();
   const link = `https://archivoinusual.vercel.app/historias/${art.slug}`;
-  const socialImg = art.socialCoverImage || (art.coverImage.startsWith('http') ? art.coverImage : `https://archivoinusual.vercel.app${art.coverImage}`);
+  
+  let socialImg = '';
+  if (art.coverImage && art.coverImage.startsWith('http')) {
+    socialImg = art.coverImage;
+  } else if (art.coverImage) {
+    socialImg = `https://archivoinusual.vercel.app${art.coverImage}`;
+  } else if (art.socialCoverImage && !art.socialCoverImage.includes('/images/social/')) {
+    socialImg = art.socialCoverImage;
+  } else {
+    socialImg = 'https://archivoinusual.vercel.app/og-cover.jpg';
+  }
+
   const hook = (art.socialHookTitle || art.title).toUpperCase();
   const docSign = art.accessionNumber ? `\n\nEste caso histórico está registrado oficialmente bajo la signatura documental DOC. ${art.accessionNumber}.` : '';
 

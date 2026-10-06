@@ -210,3 +210,22 @@ export const LanguageWelcomeBanner: React.FC = () => {
     </div>
   );
 };
+
+// Real-time Translation Feedback Floating Toast
+export const TranslationStatusToast: React.FC = () => {
+  const { isTranslating, currentLangInfo, language } = useLanguage();
+
+  if (!isTranslating) return null;
+
+  return (
+    <div className="fixed bottom-6 right-6 z-50 bg-stone-900/95 text-stone-100 text-xs font-mono px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-2.5 border border-amber-400/40 backdrop-blur-md animate-fade-in pointer-events-none">
+      <div className="w-3.5 h-3.5 border-2 border-amber-300 border-t-transparent rounded-full animate-spin" />
+      <span>
+        {language === 'es'
+          ? 'Restaurando idioma original (Español)...'
+          : `Traduciendo toda la web al ${currentLangInfo.nativeLabel}...`}
+      </span>
+      <span>{currentLangInfo.flag}</span>
+    </div>
+  );
+};

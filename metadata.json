@@ -1,0 +1,6 @@
+{
+  "name": "Archivo Inusual",
+  "description": "Un archivo digital de historias reales que parecen ficción. Publicación editorial y documental.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

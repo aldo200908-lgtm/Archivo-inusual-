@@ -50,7 +50,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
 
   const navLinks = [
     { to: '/', label: t('nav_home'), exact: true },
-    { to: '/ultimas-publicaciones', label: 'Últimas publicaciones' },
+    { to: '/ultimas-publicaciones', label: 'Últimas publicaciones', isFeatured: true },
     { to: '/historias', label: t('nav_stories') },
     { to: '/cronologia', label: t('nav_timeline') },
     { to: '/mapa', label: t('nav_map') },
@@ -101,7 +101,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           </div>
 
           {/* Navigation Items with Real Routes */}
-          <nav className="mt-4 flex flex-col gap-1 text-sm uppercase tracking-widest font-sans">
+          <nav className="mt-4 flex flex-col gap-1.5 text-sm uppercase tracking-widest font-sans">
             {navLinks.map((item) => (
               <NavLink
                 key={item.to}
@@ -109,15 +109,30 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                 end={item.exact}
                 onClick={onClose}
                 className={({ isActive }) =>
-                  `min-h-[40px] flex items-center justify-between px-3.5 py-2 transition-all text-left rounded-lg ${
-                    isActive
-                      ? 'text-stone-950 font-semibold bg-stone-200/80 shadow-2xs'
-                      : 'text-stone-700 hover:text-stone-950 hover:bg-stone-100'
+                  `min-h-[42px] flex items-center justify-between px-3.5 py-2.5 transition-all text-left rounded-xl ${
+                    item.isFeatured
+                      ? isActive
+                        ? 'text-emerald-950 font-bold bg-emerald-100/90 border border-emerald-300 shadow-2xs'
+                        : 'text-emerald-900 font-semibold bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/90 shadow-2xs'
+                      : isActive
+                        ? 'text-stone-950 font-semibold bg-stone-200/80 shadow-2xs'
+                        : 'text-stone-700 hover:text-stone-950 hover:bg-stone-100'
                   }`
                 }
               >
-                <span>{item.label}</span>
-                <IconArrowUpRight className="w-4 h-4 text-stone-400" />
+                <div className="flex items-center gap-2">
+                  {item.isFeatured && (
+                    <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" aria-hidden="true" />
+                  )}
+                  <span>{item.label}</span>
+                </div>
+                {item.isFeatured ? (
+                  <span className="text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 bg-emerald-700 text-white rounded-full font-bold">
+                    NUEVO
+                  </span>
+                ) : (
+                  <IconArrowUpRight className="w-4 h-4 text-stone-400" />
+                )}
               </NavLink>
             ))}
 

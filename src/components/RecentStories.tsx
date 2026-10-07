@@ -47,6 +47,13 @@ export const RecentStories: React.FC<RecentStoriesProps> = ({ articles }) => {
 
           {/* Interactive filter tabs with rounded pill design */}
           <div className="flex flex-wrap items-center gap-2">
+            <Link
+              to="/ultimas-publicaciones"
+              className="px-4 py-1.5 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-200 cursor-pointer border border-emerald-600 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 flex items-center gap-1.5 font-semibold shadow-2xs"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+              <span>Últimas publicaciones</span>
+            </Link>
             {filterTabs.map((tab) => {
               const isActive = selectedFilter === tab.value;
               return (

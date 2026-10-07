@@ -68,6 +68,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const navLinks = [
     { to: '/', label: t('nav_home'), exact: true },
+    { to: '/ultimas-publicaciones', label: 'Últimas publicaciones' },
     { to: '/historias', label: t('nav_stories') },
     { to: '/cronologia', label: t('nav_timeline') },
     { to: '/mapa', label: t('nav_map') },

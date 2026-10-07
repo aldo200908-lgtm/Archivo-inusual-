@@ -1,46 +1,28 @@
 import React, { useMemo } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { IconSearch, IconClose } from './Icons';
 import { CategorySlug } from '../types';
-import { searchAndFilterArticles, getAllTags, CATEGORIES } from '../data/articles';
+import { searchAndFilterArticles, CATEGORIES } from '../data/articles';
 import { ArticleGrid } from './ArticleGrid';
 import { SEOHead } from './SEOHead';
 
 export const SearchPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [showAllTags, setShowAllTags] = React.useState(false);
+  const navigate = useNavigate();
 
   // Read URL params
   const query = searchParams.get('q') || '';
   const categoryParam = (searchParams.get('cat') as CategorySlug | 'todas') || 'todas';
-  const selectedTag = searchParams.get('tag') || '';
   const sortParam = (searchParams.get('sort') as 'recent' | 'oldest' | 'featured') || 'recent';
 
-  // Available tags across dataset sorted by count
-  const availableTags = useMemo(() => {
-    return getAllTags().sort((a, b) => b.count - a.count);
-  }, []);
-
-  const visibleTags = useMemo(() => {
-    if (showAllTags) return availableTags;
-    // Show top 6 tags, ensuring selected tag is included if active
-    const top = availableTags.slice(0, 6);
-    if (selectedTag && !top.some(t => t.tag.toLowerCase() === selectedTag.toLowerCase())) {
-      const active = availableTags.find(t => t.tag.toLowerCase() === selectedTag.toLowerCase());
-      if (active) return [active, ...top.slice(0, 5)];
-    }
-    return top;
-  }, [availableTags, showAllTags, selectedTag]);
-
-  // Filtered results
+  // Filtered results (zero hashtags/tags used)
   const results = useMemo(() => {
     return searchAndFilterArticles({
       query,
       category: categoryParam,
-      tag: selectedTag,
       sort: sortParam,
     });
-  }, [query, categoryParam, selectedTag, sortParam]);
+  }, [query, categoryParam, sortParam]);
 
   // Update URL search parameters cleanly
   const updateParams = (updates: Record<string, string | undefined>) => {
@@ -67,14 +49,6 @@ export const SearchPage: React.FC = () => {
     updateParams({ cat: cat === 'todas' ? undefined : cat });
   };
 
-  const handleTagClick = (tag: string) => {
-    if (selectedTag.toLowerCase() === tag.toLowerCase()) {
-      updateParams({ tag: undefined });
-    } else {
-      updateParams({ tag });
-    }
-  };
-
   const handleSortChange = (sort: 'recent' | 'oldest' | 'featured') => {
     updateParams({ sort: sort === 'recent' ? undefined : sort });
   };
@@ -92,16 +66,16 @@ export const SearchPage: React.FC = () => {
     { label: 'Misterios documentados', value: 'misterios' },
   ];
 
-  const hasActiveFilters = Boolean(query || (categoryParam && categoryParam !== 'todas') || selectedTag || sortParam !== 'recent');
+  const hasActiveFilters = Boolean(query || (categoryParam && categoryParam !== 'todas') || sortParam !== 'recent');
 
   // Suggested keywords for quick search
-  const quickSuggestions = ['flannan', 'anticitera', 'tambora', 'bermeja', 'norton', 'petri', 'franklin', 'wow'];
+  const quickSuggestions = ['twa', 'titanic', 'san juan', 'flannan', 'anticitera', 'tambora', 'bermeja', 'norton'];
 
   return (
     <div className="w-full py-8 sm:py-12 lg:py-16">
       <SEOHead
         metadata={{
-          title: query ? `Búsqueda: "${query}"` : 'Búsqueda y descubrimiento',
+          title: query ? `Búsqueda: "${query}"` : 'Búsqueda y catálogo',
           description: 'Localice expedientes, investigaciones y anomalías documentadas en el catálogo de Archivo Inusual.',
         }}
       />
@@ -113,14 +87,14 @@ export const SearchPage: React.FC = () => {
           <div className="flex items-center gap-2 mb-2 text-xs font-sans uppercase tracking-[0.25em] text-stone-500">
             <span className="font-semibold text-stone-900">ARCHIVO INUSUAL</span>
             <span aria-hidden="true">·</span>
-            <span>CATÁLOGO Y HEURÍSTICA</span>
+            <span>CATÁLOGO Y BÚSQUEDA</span>
           </div>
 
           <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-stone-950 mb-4">
             Buscador del archivo
           </h1>
           <p className="font-sans text-base sm:text-lg text-stone-600 font-light max-w-2xl leading-relaxed">
-            Consulte expedientes por título, personas, lugares, fechas o etiquetas de catalogación hemerográfica.
+            Consulte expedientes por título, personas, lugares o acontecimientos documentados.
           </p>
 
           {/* Primary Search Input Field with rounded-full */}
@@ -137,7 +111,7 @@ export const SearchPage: React.FC = () => {
                 type="text"
                 value={query}
                 onChange={(e) => handleQueryChange(e.target.value)}
-                placeholder="Escriba un título, lugar, persona o término (ej. niebla, relojero, mapa)..."
+                placeholder="Escriba un título, lugar, persona o término (ej. avión, submarino, fuego)..."
                 className="w-full py-3 sm:py-3.5 px-2 font-sans text-base sm:text-lg text-stone-900 placeholder:text-stone-400 focus:outline-hidden"
               />
               {query && (
@@ -178,6 +152,16 @@ export const SearchPage: React.FC = () => {
               Categoría:
             </span>
             <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs font-mono uppercase tracking-wider">
+              {/* Direct link to Últimas Publicaciones */}
+              <button
+                type="button"
+                onClick={() => navigate('/ultimas-publicaciones')}
+                className="px-3.5 py-1.5 transition-all cursor-pointer border border-emerald-600 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 rounded-full min-h-[36px] shadow-2xs font-semibold flex items-center gap-1.5"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                <span>Últimas publicaciones</span>
+              </button>
+
               {categoryOptions.map((cat) => {
                 const isActive =
                   (cat.value === 'todas' && (categoryParam === 'todas' || !categoryParam)) ||
@@ -243,49 +227,6 @@ export const SearchPage: React.FC = () => {
 
         </div>
 
-        {/* Compact Tags Selection Bar (Hidden when searching to bring results directly into view) */}
-        {!query && (
-          <div className="pb-6 mb-8 border-b border-stone-200/80">
-            <div className="flex items-center justify-between gap-2 mb-3">
-              <div className="flex items-center gap-2 text-xs font-mono text-stone-500 uppercase tracking-wider">
-                <span className="font-mono font-bold text-stone-400">#</span>
-                <span>Etiquetas principales:</span>
-              </div>
-              <button
-                type="button"
-                onClick={() => setShowAllTags(!showAllTags)}
-                className="text-xs font-mono text-stone-500 hover:text-stone-900 cursor-pointer underline underline-offset-4 decoration-stone-300 transition-colors"
-              >
-                {showAllTags ? 'Mostrar menos' : `Ver todas (${availableTags.length})`}
-              </button>
-            </div>
-
-            <div className="flex flex-wrap gap-2">
-              {visibleTags.map(({ tag, count }) => {
-                const isSelected = selectedTag.toLowerCase() === tag.toLowerCase();
-                return (
-                  <button
-                    key={tag}
-                    type="button"
-                    onClick={() => handleTagClick(tag)}
-                    className={`px-3 py-1 text-xs font-sans rounded-full transition-all cursor-pointer border shadow-2xs ${
-                      isSelected
-                        ? 'bg-stone-900 border-stone-900 text-stone-50 font-medium'
-                        : 'bg-white border-stone-200 text-stone-600 hover:border-stone-400 hover:text-stone-950'
-                    }`}
-                    aria-pressed={isSelected}
-                  >
-                    #{tag}
-                    <span className={`ml-1.5 text-[10px] ${isSelected ? 'text-stone-300' : 'text-stone-400'}`}>
-                      ({count})
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
         {/* Current State Summary Banner */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 mb-10 border-b border-stone-200">
           <div>
@@ -293,10 +234,6 @@ export const SearchPage: React.FC = () => {
               {query ? (
                 <>
                   Resultados para: <span className="italic font-normal">«{query}»</span>
-                </>
-              ) : selectedTag ? (
-                <>
-                  Expedientes etiquetados: <span className="italic font-normal">#{selectedTag}</span>
                 </>
               ) : (
                 'Catálogo general de expedientes'
@@ -336,20 +273,8 @@ export const SearchPage: React.FC = () => {
             </h3>
 
             <p className="font-sans text-sm sm:text-base text-stone-600 font-light leading-relaxed mb-6 max-w-lg mx-auto">
-              No se han localizado registros que coincidan con «<strong className="text-stone-900">{query || selectedTag}</strong>». Compruebe la ortografía o intente con términos más amplios.
+              No se han localizado registros que coincidan con «<strong className="text-stone-900">{query}</strong>». Compruebe la ortografía o intente con términos más amplios.
             </p>
-
-            <div className="bg-[#FAF8F5] border border-stone-200 p-4 max-w-md mx-auto mb-8 text-xs font-sans text-stone-600 text-left">
-              <div className="flex items-center gap-1.5 font-semibold text-stone-800 mb-2 uppercase tracking-wider text-[11px]">
-                <span className="text-amber-700">✦</span>
-                Sugerencias de exploración:
-              </div>
-              <ul className="list-disc pl-4 space-y-1">
-                <li>Pruebe con palabras individuales como «niebla», «desierto» o «señal».</li>
-                <li>Retire el filtro de etiqueta o categoría actual.</li>
-                <li>Explore el índice completo de historias sin términos de búsqueda.</li>
-              </ul>
-            </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3">
               <button

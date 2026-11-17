@@ -20,8 +20,8 @@
     <path d="M100 0 V800 M200 0 V800 M300 0 V800 M400 0 V800 M500 0 V800 M600 0 V800 M700 0 V800 M800 0 V800 M900 0 V800 M1000 0 V800 M1100 0 V800"/>
   </g>
   <path d="M1200 0 H760 C700 60 730 110 660 150 C600 185 640 240 560 275 C520 292 545 330 480 350 L1200 350 Z" fill="url(#land)" opacity="0.92"/>
-  <text x="960" y="90" font-family="Georgia, serif" font-size="30" fill="#3d2c17" letter-spacing="4">EL CONTINENTE</text>
-  <text x="958" y="122" font-family="Georgia, serif" font-size="17" fill="#4a371d">costa de Virginia y Carolina</text>
+  <text x="900" y="90" font-family="Georgia, serif" font-size="30" fill="#3d2c17" letter-spacing="4">EL CONTINENTE</text>
+  <text x="898" y="122" font-family="Georgia, serif" font-size="17" fill="#4a371d">costa de Virginia y Carolina</text>
   <g>
     <path d="M470 300 L492 262 L500 300 L514 258 L524 300 L540 266 L548 302 L566 270 L574 306 L592 274 L600 312 L470 312 Z" fill="#5d4226"/>
     <ellipse cx="535" cy="345" rx="95" ry="34" fill="#7d5c35"/>
@@ -29,9 +29,10 @@
     <text x="535" y="347" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="24" fill="#f3e5c3" letter-spacing="2">ROANOKE</text>
   </g>
   <g transform="rotate(24 760 560)">
-    <ellipse cx="760" cy="560" rx="190" ry="26" fill="#87683f"/>
-    <text x="760" y="568" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="22" fill="#f3e5c3" letter-spacing="2">CROATOAN &#183; HOY HATTERAS</text>
+    <ellipse cx="760" cy="560" rx="170" ry="25" fill="#87683f"/>
+    <text x="760" y="568" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="21" fill="#f3e5c3" letter-spacing="2">CROATOAN</text>
   </g>
+  <text x="905" y="640" font-family="Georgia, serif" font-size="17" fill="#4a371d">hoy isla de Hatteras</text>
   <path d="M560 375 C620 430 660 470 700 520" fill="none" stroke="#40301a" stroke-width="3" stroke-dasharray="10 8"/>
   <path d="M470 330 C380 320 320 300 250 268" fill="none" stroke="#40301a" stroke-width="3" stroke-dasharray="10 8"/>
   <g transform="translate(232 252)">
@@ -45,7 +46,7 @@
     <text x="0" y="-62" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#3d2c17">N</text>
   </g>
   <text x="690" y="445" font-family="Georgia, serif" font-style="italic" font-size="19" fill="#4a371d">sonda de Albemarle</text>
-  <text x="815" y="650" font-family="Georgia, serif" font-style="italic" font-size="19" fill="#4a371d">oc&#233;ano Atl&#225;ntico</text>
+  <text x="980" y="700" font-family="Georgia, serif" font-style="italic" font-size="19" fill="#4a371d">oc&#233;ano Atl&#225;ntico</text>
   <g>
     <rect x="60" y="470" width="430" height="86" rx="8" fill="url(#wood)" stroke="#4a3018" stroke-width="3"/>
     <path d="M60 498 H490 M60 528 H490" stroke="#5d3d20" stroke-width="2" opacity="0.6"/>

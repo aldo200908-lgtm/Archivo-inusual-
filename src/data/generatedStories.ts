@@ -6,6 +6,183 @@ import { Article } from '../types/index';
  */
 export const GENERATED_STORIES: Article[] = [
 {
+  "id": "gen-la-colonia-perdida-de-roanoke-1590-1794891652421",
+  "slug": "la-colonia-perdida-de-roanoke-1590",
+  "title": "Una palabra tallada en un poste y 115 colonos esfumados: La colonia perdida de Roanoke (1587-1590)",
+  "subtitle": "La crónica documentada de la primera colonia de familias inglesas en América: tres años de silencio, un regreso el día de un cumpleaños y un mensaje de ocho letras que la arqueología sigue persiguiendo.",
+  "category": "misterios",
+  "categoryLabel": "MISTERIOS DOCUMENTADOS",
+  "coverImage": "/images/real/wiki_la-colonia-perdida-de-roanoke-1590.svg",
+  "imageCaption": "Fig. 1 — Ilustración cartográfica de Archivo Inusual a partir del mapa 'La Virginea Pars' de John White (c. 1585): la isla de Roanoke, la isla de Croatoan (hoy Hatteras) y el poste con la palabra CROATOAN hallado en 1590.",
+  "date": "Agosto de 1590 / Isla de Roanoke, actual Carolina del Norte, Estados Unidos",
+  "publishedAt": "2026-11-16",
+  "readingTime": "25 min",
+  "excerpt": "En agosto de 1590, John White regresó a la colonia inglesa de Roanoke tras tres años bloqueado por la guerra con España. Buscaba a 115 colonos, entre ellos a su hija y a su nieta recién nacida. Encontró las casas desmontadas, ninguna tumba y una sola palabra tallada en un poste de la empalizada: CROATOAN. Este expediente reconstruye, con los relatos de la época y la arqueología actual, el destino más probable de la colonia perdida.",
+  "featured": false,
+  "tags": [
+    "Roanoke",
+    "Colonia Perdida",
+    "Siglo XVI",
+    "Carolina del Norte",
+    "Arqueología"
+  ],
+  "quote": "Hallamos tallado en un poste, en letras mayúsculas claras, CROATOAN, sin cruz ni señal alguna de angustia.",
+  "quoteAuthor": "John White, gobernador de Roanoke, en su relato del viaje de 1590 publicado por Richard Hakluyt",
+  "accessionNumber": "ARC-MST-ROA-1590",
+  "socialCoverImage": "/images/real/wiki_la-colonia-perdida-de-roanoke-1590.svg",
+  "socialHookTitle": "115 COLONOS DESAPARECIERON Y SOLO DEJARON UNA PALABRA: CROATOAN",
+  "socialLocation": "ISLA DE ROANOKE · CAROLINA DEL NORTE (1590)",
+  "socialSummary": "En 1590 John White volvió a Roanoke y no encontró a ninguno de los 115 colonos. Ni cuerpos, ni lucha: solo las casas desmontadas y la palabra CROATOAN tallada en un poste. ¿A dónde fueron?",
+  "content": [
+    {
+      "id": "sec-1",
+      "heading": "1. Inglaterra llega tarde a América",
+      "paragraphs": [
+        "Cuando Isabel I concedió a Walter Raleigh la carta real de 1584, España llevaba casi un siglo extrayendo plata y oro de América y Portugal controlaba las rutas de Brasil. Inglaterra, sin una sola colonia permanente al otro lado del Atlántico, necesitaba una base: un puerto desde el que acosar a la Flota de Indias española y, con el tiempo, un asentamiento que le diera un lugar propio en el Nuevo Mundo.",
+        "El lugar elegido fue una isla baja y arenosa protegida por los bancos de arena de los Outer Banks, frente a la actual Carolina del Norte. Los pueblos algonquinos que la habitaban la conocían desde siempre; para los ingleses pasó a llamarse Roanoke. Nadie imaginó que aquel nombre quedaría unido para siempre a la primera gran desaparición documentada de la colonización europea en América del Norte."
+      ]
+    },
+    {
+      "id": "sec-2",
+      "heading": "2. 1584: la expedición que volvió contando maravillas",
+      "paragraphs": [
+        "El 27 de abril de 1584 zarparon Philip Amadas y Arthur Barlowe. Llegaron a la costa en julio y establecieron contacto con los secotan y los croatoan, los pueblos de la región. Al regresar a Inglaterra llevaron consigo a dos indígenas croatoan, Manteo y Wanchese, que describieron a Raleigh la geografía y las divisiones políticas de aquellas tierras.",
+        "El informe de Barlowe pintaba un paraíso de suelo fértil y gentes hospitalarias. Era, en buena parte, un documento de promoción: Raleigh necesitaba inversores y voluntarios. Pero debajo del entusiasmo había un dato real y decisivo: existía un pueblo, el croatoan de la isla hoy llamada Hatteras, dispuesto a tratar con los recién llegados. Ese nombre, croatoan, reaparecerá al final de esta historia tallado en un poste."
+      ]
+    },
+    {
+      "id": "sec-3",
+      "heading": "3. 1585: la colonia militar de Ralph Lane",
+      "paragraphs": [
+        "La primera colonia, instalada en agosto de 1585, no era una colonia de familias sino una guarnición: 107 hombres al mando de Ralph Lane, bajo la flota de Richard Grenville. Entre ellos viajaban dos hombres clave para el registro histórico: el científico Thomas Harriot, encargado de estudiar la tierra y sus gentes, y el artista John White, que dibujó acuarelas de los pueblos, la fauna y la costa que hoy custodia el Museo Británico.",
+        "El barco insignia había encallado al entrar y gran parte de las provisiones se estropearon con el agua salada. Desde el primer mes, la guarnición dependió para comer de los mismos pueblos a los que pretendía imponerse. Lane levantó un pequeño fuerte de tierra en el extremo norte de la isla y exploró el interior, pero la despensa vacía convirtió cada negociación con los secotan en una amenaza."
+      ]
+    },
+    {
+      "id": "sec-4",
+      "heading": "4. La copa de plata y la aldea quemada",
+      "paragraphs": [
+        "El punto de ruptura llegó por un objeto menor: los ingleses acusaron a los habitantes de la aldea de Aquascogoc de robar una copa de plata y, en represalia, saquearon y quemaron el pueblo y sus cosechas. El episodio quedó registrado en los relatos recopilados por Richard Hakluyt, y su efecto fue permanente: la región entera aprendió que los extranjeros castigaban un hurto destruyendo el alimento de todos.",
+        "En la primavera de 1586 las relaciones estaban rotas. Lane, convencido de que el jefe Wingina —que había cambiado su nombre por Pemisapan, un gesto que los historiadores leen como señal de ruptura— preparaba un ataque, se adelantó y lo mató en un encuentro armado. Semanas después, los colonos rechazaron un asalto contra el fuerte. La colonia militar había sobrevivido un año y había perdido a casi todos sus aliados."
+      ],
+      "callout": "Una copa de plata robada, una aldea quemada: en menos de un año, la primera colonia inglesa convirtió a sus proveedores de alimentos en enemigos."
+    },
+    {
+      "id": "sec-5",
+      "heading": "5. Drake se los lleva: el primer abandono",
+      "paragraphs": [
+        "Grenville debía volver en abril de 1586 con refuerzos y provisiones, pero abril pasó sin barcos. En junio apareció por sorpresa la flota de Francis Drake, de regreso de saquear el Caribe español, y ofreció a Lane llevarse a todos a Inglaterra. Tras perder en una tormenta parte del equipo, los 107 hombres aceptaron y zarparon el 28 de junio de 1586. De aquel viaje volvieron a Europa, entre otras cosas, el tabaco, el maíz y la patata.",
+        "La ironía del expediente es amarga: la flota de socorro de Grenville llegó muy poco después y encontró el fuerte vacío. Grenville dejó en la isla un destacamento de quince hombres con provisiones para dos años, para mantener la reclamación inglesa, y volvió a Inglaterra. Cuando la siguiente expedición llegó un año después, de esos quince hombres solo apareció un esqueleto."
+      ]
+    },
+    {
+      "id": "sec-6",
+      "heading": "6. 1587: una colonia de familias, no de soldados",
+      "paragraphs": [
+        "Raleigh lo intentó de nuevo en 1587, pero con otra idea: esta vez no viajaban soldados, sino familias enteras destinadas a fundar una ciudad permanente, la 'Cittie of Ralegh', prevista en la bahía de Chesapeake. Eran ciento quince colonos —las listas conservadas permiten contar hombres, mujeres y niños con nombres y apellidos— al mando de un gobernador civil: John White, el artista de 1585.",
+        "El plan se torció en la llegada, el 22 de julio de 1587. El piloto de la flota, Simão Fernandes, se negó a llevarlos hasta Chesapeake y los obligó a desembarcar de nuevo en Roanoke, en el mismo fuerte deteriorado de Lane. Sus motivos nunca quedaron claros. White restableció la amistad con los croatoan de Manteo, pero los pueblos enfrentados a Lane se negaron a reunirse con él, y un colono, George Howe, apareció muerto mientras recogía cangrejos en la orilla."
+      ]
+    },
+    {
+      "id": "sec-7",
+      "heading": "7. Virginia Dare: la primera inglesa nacida en América",
+      "paragraphs": [
+        "El 18 de agosto de 1587, Eleanor White, hija del gobernador, dio a luz a una niña: Virginia Dare, la primera persona de padres ingleses nacida en América de la que existe registro. Días después fue bautizado también Manteo, el aliado croatoan, en una ceremonia que sellaba la única alianza sólida de la colonia.",
+        "Virginia Dare no es un detalle sentimental del expediente: es su centro humano. Cuando su abuelo vuelva a Roanoke, lo hará exactamente el día de su tercer cumpleaños, y la buscará entre las casas desmontadas de un pueblo fantasma."
+      ],
+      "callout": "Virginia Dare nació el 18 de agosto de 1587. Su abuelo regresó a buscarla el 18 de agosto de 1590, el día que cumplía tres años."
+    },
+    {
+      "id": "sec-8",
+      "heading": "8. White zarpa a Inglaterra y deja atrás a su familia",
+      "paragraphs": [
+        "La colonia tenía pocas provisiones, ningún barco propio y enemigos alrededor. Los colonos convencieron a White de que volviera él solo a Inglaterra a explicar la situación y traer ayuda: nadie mejor que el gobernador, amigo de Raleigh, para ser escuchado. White zarpó a finales de agosto de 1587 dejando atrás a su hija, a su yerno Ananias Dare y a su nieta recién nacida.",
+        "Antes de partir se acordó un código sencillo y crucial para este expediente: si los colonos decidían trasladarse, tallarían en un árbol o en un poste el nombre del lugar al que se marchaban; y si lo hacían forzados o en peligro, tallarían sobre el nombre una cruz. Ese acuerdo convierte lo que White encontró tres años después en un mensaje, no en un simple grafiti."
+      ]
+    },
+    {
+      "id": "sec-9",
+      "heading": "9. La Armada Invencible cierra el Atlántico",
+      "paragraphs": [
+        "White llegó a Inglaterra en el peor momento posible. La guerra anglo-española estaba en su punto máximo y en 1588 Felipe II lanzó la Gran Armada contra Inglaterra: la reina requisó todos los barcos capaces de navegar para la defensa del reino y prohibió salidas que dejaran el país sin naves. El gobernador de Roanoke se quedó, literalmente, sin barco.",
+        "Su intento de esa primavera de 1588 con dos pequeñas embarcaciones terminó en desastre antes de cruzar el Atlántico: los capitanes, más interesados en el corso que en el socorro, intentaron apresar barcos españoles, fueron derrotados y desvalijados, y tuvieron que regresar a Inglaterra sin haber entregado ni un barril de provisiones. La colonia, mientras tanto, consumía su segundo invierno sin noticias."
+      ]
+    },
+    {
+      "id": "sec-10",
+      "heading": "10. Tres años de silencio",
+      "paragraphs": [
+        "De lo ocurrido en Roanoke entre 1587 y 1590 no existe ni una sola línea escrita por los colonos. Todo lo que se sabe de esos tres años debe deducirse de lo que White vio al regresar y de lo que décadas después contaron, de segunda mano, los colonos de Jamestown y los viajeros que trataron con los pueblos de la región.",
+        "Las condiciones que el archivo sí permite reconstruir son duras: una sequía severa en la región —los estudios de anillos de árboles la consideran de las más graves en siglos—, cosechas indígenas escasas para todos y una despensa inglesa que dependía de vecinos con los que Lane había dejado una guerra abierta. El hambre, más que cualquier batalla, es el telón de fondo documentado de la desaparición."
+      ]
+    },
+    {
+      "id": "sec-11",
+      "heading": "11. 18 de agosto de 1590: el regreso",
+      "paragraphs": [
+        "White consiguió por fin pasaje en una expedición corsaria que aceptó desviarse a Roanoke a la vuelta del Caribe. El 18 de agosto de 1590, entre humo lejano y con desembarco difícil por el mal tiempo, sus hombres llegaron al asentamiento. No había nadie. No había cuerpos, ni tumbas, ni señales de combate.",
+        "Lo que encontraron fue más extraño que una matanza: las casas habían sido desmontadas pieza a pieza, no quemadas ni derribadas; el lugar estaba rodeado por una empalizada nueva y fuerte; los objetos pesados de hierro yacían abandonados entre la hierba, y los cofres que White había enterrado en 1587 aparecieron desenterrados y saqueados, con sus libros y su armadura arruinados por la lluvia. Todo indicaba una marcha organizada y sin prisa, no una huida."
+      ],
+      "callout": "Sin cuerpos, sin tumbas y sin señales de lucha: las casas desmontadas indicaban que la colonia se había marchado por decisión propia."
+    },
+    {
+      "id": "sec-12",
+      "heading": "12. CROATOAN: la palabra que lo explica y no explica nada",
+      "paragraphs": [
+        "En un árbol, a la entrada, aparecieron talladas las letras CRO. Y en el poste principal de la empalizada, despojado de su corteza, estaba la palabra completa en letras mayúsculas: CROATOAN. Encima no había ninguna cruz. Según el código pactado en 1587, el significado era directo: nos hemos trasladado a Croatoan, y no lo hemos hecho en peligro.",
+        "Croatoan era la isla situada unos ochenta kilómetros al sur —la actual isla de Hatteras— y también el pueblo de Manteo, el aliado más fiel de los ingleses. White lo entendió así de inmediato y quiso zarpar hacia allí al día siguiente. Una tormenta casi hunde su barco, la tripulación se negó a seguir y la flota puso rumbo a Inglaterra. White nunca volvió a América, y nunca supo qué fue de su hija ni de su nieta."
+      ],
+      "callout": "«Hallamos tallado en un poste, en letras mayúsculas claras, CROATOAN, sin cruz ni señal alguna de angustia». — John White, relato de 1590"
+    },
+    {
+      "id": "sec-13",
+      "heading": "13. Las búsquedas: Raleigh, Jamestown y los rumores",
+      "paragraphs": [
+        "Raleigh envió una expedición de búsqueda en 1602 al mando de Samuel Mace, pero el mal tiempo le impidió incluso desembarcar en Roanoke, y tras su caída en desgracia y arresto por traición no pudo organizar más viajes. Los españoles, que buscaban la colonia para destruirla como base corsaria, encontraron sus restos en 1590 por casualidad y los tomaron por una simple avanzadilla.",
+        "Los testimonios más inquietantes llegaron con la colonia de Jamestown, fundada en 1607. Su secretario, William Strachey, recogió años después la versión de que los colonos de Roanoke habían vivido en paz entre los chesepian y habrían sido exterminados por orden del jefe Powhatan poco antes de la llegada de los ingleses de Jamestown. Es un relato de segunda mano, imposible de verificar, que convive en el archivo con otros informes de indígenas de rasgos y ojos claros en pueblos del interior: rumores que Jamestown nunca confirmó con pruebas."
+      ]
+    },
+    {
+      "id": "sec-14",
+      "heading": "14. El mapa con un fuerte escondido: el Sitio X",
+      "paragraphs": [
+        "En 2012, el Museo Británico examinó a petición de la First Colony Foundation el mapa de la costa pintado por el propio White, 'La Virginea Pars'. Bajo uno de los dos parches pegados sobre el papel apareció, dibujado en tinta invisible a simple vista, el símbolo de un fuerte situado unos ochenta kilómetros al interior, donde el arroyo Salmon Creek se une al río Chowan, en el actual condado de Bertie.",
+        "White había escrito que los colonos planeaban 'trasladarse cincuenta millas hacia el interior', y el símbolo oculto coincide con esa distancia. Las excavaciones de la fundación en ese lugar, bautizado Sitio X, recuperaron fragmentos de cerámica inglesa del tipo que dejó de llevarse a América después de 1606, junto a otros objetos europeos del siglo XVI; un segundo yacimiento cercano, el Sitio Y, aportó más fragmentos. Los arqueólogos responsables sostienen que allí vivió un grupo reducido de colonos. Otros especialistas, como Charles Ewen, de la Universidad de Carolina del Este, se declaran escépticos: la cerámica prueba presencia inglesa temprana, pero no lleva escrito el nombre de sus dueños."
+      ],
+      "callout": "Bajo un parche del mapa de White apareció en 2012 el símbolo de un fuerte a cincuenta millas al interior: exactamente la distancia que los colonos dijeron que pensaban trasladarse."
+    },
+    {
+      "id": "sec-15",
+      "heading": "15. Hatteras y el dictamen del archivo: ¿perdidos o integrados?",
+      "paragraphs": [
+        "La segunda pista sigue la palabra tallada. En la isla de Hatteras, la antigua Croatoan, las excavaciones dirigidas por el arqueólogo Mark Horton, de la Universidad de Bristol, junto a la Croatoan Archaeological Society de Scott Dawson, han recuperado en un poblado indígena objetos europeos del siglo XVI —entre ellos parte de la empuñadura de un estoque y de un arma de fuego— y, en campañas recientes, restos microscópicos de forja de hierro en capas datadas hacia finales de ese siglo. Ya en 1701-1709 el viajero John Lawson anotó que los hatteras le dijeron que varios de sus antepasados habían sido blancos y que algunos tenían los ojos grises.",
+        "El Servicio de Parques Nacionales de Estados Unidos, custodio del Sitio Histórico Nacional de Fort Raleigh, mantiene el dictamen prudente: nadie ha probado de forma definitiva qué ocurrió. Pero el expediente completo —la empalizada sin cruz, las casas desmontadas, el Sitio X al interior y los objetos ingleses en Hatteras— apunta hoy a una conclusión menos fantástica y más humana que la leyenda: la colonia probablemente no se desvaneció en una noche, sino que se dividió en grupos, buscó refugio entre los pueblos que conocía y se integró en ellos, dejando como último mensaje oficial una sola palabra tallada en un poste."
+      ],
+      "callout": "Dictamen del archivo: no hay prueba de una masacre ni de un fenómeno extraño. La evidencia disponible sugiere traslado, división del grupo e integración con los pueblos vecinos."
+    }
+  ],
+  "sources": [
+    {
+      "title": "White, John. Relato del viaje de 1590 a Virginia, en Hakluyt, Richard (comp.), The Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation (1600)"
+    },
+    {
+      "title": "Harriot, Thomas. A Briefe and True Report of the New Found Land of Virginia (1588), con grabados a partir de las acuarelas de John White"
+    },
+    {
+      "title": "National Park Service (EE. UU.), Fort Raleigh National Historic Site: historia oficial de la colonia de 1587 y del regreso de 1590"
+    },
+    {
+      "title": "British Museum, Londres: Mapa 'La Virginea Pars' de John White (c. 1585) y examen técnico de sus parches (2012)"
+    },
+    {
+      "title": "First Colony Foundation: Informes de excavación del Sitio X y el Sitio Y, condado de Bertie, Carolina del Norte"
+    },
+    {
+      "title": "Horton, Mark (Universidad de Bristol) y Croatoan Archaeological Society: Excavaciones en la isla de Hatteras, antigua Croatoan"
+    }
+  ]
+},
+{
   "id": "gen-incendio-teatro-iroquois-chicago-1903-1791354505497",
   "slug": "incendio-teatro-iroquois-chicago-1903",
   "title": "La Noche del Incendio del Iroquois Theater (1903): El día que el telón se convirtió en trampa mortal en Chicago",

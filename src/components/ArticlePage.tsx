@@ -438,8 +438,12 @@ export const ArticlePage: React.FC = () => {
               )}
 
               {/* Mid-article discreet sponsorship slots */}
+              {sIndex === 1 && <InArticleAd slotId="mid-0" variant="mid-article-2" />}
               {sIndex === 3 && <InArticleAd slotId="mid-1" variant="mid-article-1" />}
+              {sIndex === 5 && <InArticleAd slotId="mid-3" variant="mid-article-1" />}
               {sIndex === 8 && <InArticleAd slotId="mid-2" variant="mid-article-2" />}
+              {sIndex === 11 && <InArticleAd slotId="mid-4" variant="mid-article-2" />}
+              {sIndex === 14 && <InArticleAd slotId="mid-5" variant="mid-article-1" />}
             </React.Fragment>
           ))}
         </div>
